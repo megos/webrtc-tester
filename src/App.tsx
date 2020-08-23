@@ -1,6 +1,6 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import logo from './logo.svg'
+import './App.css'
 
 interface AppProps {}
 
@@ -22,7 +22,7 @@ function App({}: AppProps) {
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
