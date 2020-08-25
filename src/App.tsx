@@ -1,26 +1,36 @@
-import React from 'react'
-import logo from './logo.svg'
-import './App.css'
+import React, { useState } from 'react'
+import { AppBar, Toolbar, Typography } from '@material-ui/core'
+import { Browser } from './components/Browser'
+import { Audio } from './components/Audio'
+import { Sound } from './components/Sound'
+import { getStream } from './util'
+import { Sfu } from './components/Sfu'
 
 interface AppProps {}
 
 function App({}: AppProps) {
+  const [deviceId, setDeviceId] = useState('')
+  const [stream, setStream] = useState<MediaStream | null>(null)
+  const [startRoom, setStartRoom] = useState(false)
+
+  const handleDeviceId = async (value: string) => {
+    setDeviceId(value)
+    setStream(await getStream({ audio: { deviceId: value }}))
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="h6">
+            診断ツール
+          </Typography>
+        </Toolbar>
+      </AppBar>
+      <Browser />
+      <Sound />
+      <Audio deviceId={deviceId} onChangeDeviceId={handleDeviceId} stream={stream} showStream={!startRoom} />
+      <Sfu stream={stream} onJoinRoom={setStartRoom} />
     </div>
   )
 }
