@@ -3,5 +3,8 @@
   "plugins": [],
   "alias": {
     "skyway-js": "skyway-js/dist/skyway.js"
+  },
+  "installOptions": {
+    "treeshake": false
   }
 }
