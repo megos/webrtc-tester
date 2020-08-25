@@ -7,6 +7,7 @@ export const Sound: React.FC = () => {
       <Typography>Step.2 スピーカー</Typography>
       <Card>
         <CardContent>
+        <Typography color="textSecondary">再生ボタンを押して効果音が聞こえますか？聞こえない場合はスピーカーが繋がっているか、音量が0になっていないか確認してください</Typography>
           {/* https://soundeffect-lab.info/sound/anime/ */}
           <audio src="/assets/eye-shine1.mp3" controls />
         </CardContent>

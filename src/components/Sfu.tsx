@@ -84,7 +84,8 @@ export const Sfu: React.FC<{ stream: MediaStream | null }> = ({ stream }) => {
           <Button onClick={destroy}>
             切断
           </Button>
-          {remoteStream && <AudioStream stream={remoteStream} autoPlay />}
+          <Typography color="textSecondary">接続後、自分の声がやまびことして聞こえますか？聞こえる場合は繋がっています</Typography>
+          {<AudioStream stream={remoteStream} autoPlay />}
         </CardContent>
       </Card>
     </>

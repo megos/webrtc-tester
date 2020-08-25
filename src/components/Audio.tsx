@@ -15,6 +15,7 @@ export const Audio: React.FC<{ deviceId: string; onChangeDeviceId: (value: strin
       <Card>
         <CardContent>
           <AudioSelect value={deviceId} onChange={onChangeDeviceId} />
+          <Typography color="textSecondary">再生ボタンを押して、自分の声が聞こえるか確認してください</Typography>
           <AudioStream stream={stream} /> 
         </CardContent>
       </Card>

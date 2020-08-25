@@ -45,6 +45,7 @@ export const AudioSelect: React.FC<AudioSelectProps> = ({
 
   return (
     <>
+      <Typography color="textSecondary">マイクが見つかりませんと表示される場合はマイクが繋がっているか、ブラウザでマイクの許可ができているか確認してください</Typography>
       <Select
         label={unavailable ? 'マイクが見つかりません' : 'マイクを選択する'}
         onChange={(e) => onChange(e.target.value as string)}
