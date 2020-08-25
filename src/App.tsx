@@ -1,6 +1,7 @@
 import React from 'react'
 import { AppBar, Toolbar, Typography } from '@material-ui/core'
 import { Browser } from './components/Browser'
+import { Audio } from './components/Audio'
 
 interface AppProps {}
 
@@ -15,6 +16,7 @@ function App({}: AppProps) {
         </Toolbar>
       </AppBar>
       <Browser />
+      <Audio />
     </div>
   )
 }
