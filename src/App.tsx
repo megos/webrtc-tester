@@ -11,6 +11,7 @@ interface AppProps {}
 function App({}: AppProps) {
   const [deviceId, setDeviceId] = useState('')
   const [stream, setStream] = useState<MediaStream | null>(null)
+  const [startRoom, setStartRoom] = useState(false)
 
   const handleDeviceId = async (value: string) => {
     setDeviceId(value)
@@ -28,8 +29,8 @@ function App({}: AppProps) {
       </AppBar>
       <Browser />
       <Sound />
-      <Audio deviceId={deviceId} onChangeDeviceId={handleDeviceId} stream={stream} />
-      <Sfu stream={stream} />
+      <Audio deviceId={deviceId} onChangeDeviceId={handleDeviceId} stream={stream} showStream={!startRoom} />
+      <Sfu stream={stream} onJoinRoom={setStartRoom} />
     </div>
   )
 }

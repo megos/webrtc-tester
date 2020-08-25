@@ -18,14 +18,15 @@ interface PeerError extends Error {
     | 'unavailable-id'
 }
 
-const onError = (e: PeerError) => {
-  console.error(e)
-}
-
-export const Sfu: React.FC<{ stream: MediaStream | null }> = ({ stream }) => {
+export const Sfu: React.FC<{ stream: MediaStream | null; onJoinRoom: (value: boolean) => void }> = ({ stream, onJoinRoom }) => {
   const peerRef = useRef<Peer | null>(null)
   const peer2Ref = useRef<Peer | null>(null)
   const [remoteStream, setRemoteStream] = useState<MediaStream | null>(null)
+
+  const onError = (e: PeerError) => {
+    console.error(e)
+    onJoinRoom(false)
+  }
 
   const handleClick = () => {
     if (!stream) {
@@ -33,6 +34,7 @@ export const Sfu: React.FC<{ stream: MediaStream | null }> = ({ stream }) => {
       return
     }
 
+    onJoinRoom(true)
     peerRef.current = new Peer({
       key:
         import.meta.env.SNOWPACK_PUBLIC_SKYWAY_KEY ?? 'PLEASE SET SKYWAY_KEY',
@@ -71,6 +73,7 @@ export const Sfu: React.FC<{ stream: MediaStream | null }> = ({ stream }) => {
   const destroy = () => {
     peerRef.current?.destroy()
     peer2Ref.current?.destroy()
+    onJoinRoom(false)
   }
 
   useEffect(() => {
