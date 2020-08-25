@@ -27,8 +27,8 @@ function App({}: AppProps) {
         </Toolbar>
       </AppBar>
       <Browser />
-      <Audio deviceId={deviceId} onChangeDeviceId={handleDeviceId} stream={stream} />
       <Sound />
+      <Audio deviceId={deviceId} onChangeDeviceId={handleDeviceId} stream={stream} />
       <Sfu stream={stream} />
     </div>
   )

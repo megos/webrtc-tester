@@ -4,7 +4,7 @@ import { Typography, Card, CardContent } from '@material-ui/core'
 export const Sound: React.FC = () => {
   return (
     <>
-      <Typography>Step.3 スピーカー</Typography>
+      <Typography>Step.2 スピーカー</Typography>
       <Card>
         <CardContent>
           {/* https://soundeffect-lab.info/sound/anime/ */}

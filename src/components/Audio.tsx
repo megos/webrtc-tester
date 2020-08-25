@@ -11,7 +11,7 @@ export const Audio: React.FC<{ deviceId: string; onChangeDeviceId: (value: strin
 
   return (
     <>
-      <Typography>Step.2 マイク</Typography>
+      <Typography>Step.3 マイク</Typography>
       <Card>
         <CardContent>
           <AudioSelect value={deviceId} onChange={onChangeDeviceId} />
