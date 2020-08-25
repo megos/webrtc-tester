@@ -33,7 +33,7 @@ export const Sfu: React.FC<{ stream: MediaStream | null }> = ({ stream }) => {
     }
 
     peerRef.current = new Peer({
-      key: 'PLEASE SET SKYWAY_KEY',
+      key: import.meta.env.SNOWPACK_PUBLIC_SKYWAY_KEY ?? 'PLEASE SET SKYWAY_KEY',
       debug: 3,
     })
     peerRef.current.on('error', onError)
@@ -50,7 +50,7 @@ export const Sfu: React.FC<{ stream: MediaStream | null }> = ({ stream }) => {
       })
       room.on('open', () => {
         peer2Ref.current = peerRef.current = new Peer(peerId + '_echo', {
-          key: 'PLEASE SET SKYWAY_KEY',
+          key: import.meta.env.SNOWPACK_PUBLIC_SKYWAY_KEY ?? 'PLEASE SET SKYWAY_KEY',
           debug: 3,
         })
         peer2Ref.current.on('error', onError)
