@@ -1,12 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { AppBar, Toolbar, Typography } from '@material-ui/core'
 import { Browser } from './components/Browser'
 import { Audio } from './components/Audio'
 import { Sound } from './components/Sound'
+import { getStream } from './util'
+import { Sfu } from './components/Sfu'
 
 interface AppProps {}
 
 function App({}: AppProps) {
+  const [deviceId, setDeviceId] = useState('')
+  const [stream, setStream] = useState<MediaStream | null>(null)
+
+  const handleDeviceId = async (value: string) => {
+    setDeviceId(value)
+    setStream(await getStream({ audio: { deviceId: value }}))
+  }
+
   return (
     <div className="App">
       <AppBar position="static">
@@ -17,8 +27,9 @@ function App({}: AppProps) {
         </Toolbar>
       </AppBar>
       <Browser />
-      <Audio />
+      <Audio deviceId={deviceId} onChangeDeviceId={handleDeviceId} stream={stream} />
       <Sound />
+      <Sfu stream={stream} />
     </div>
   )
 }
