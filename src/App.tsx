@@ -15,21 +15,24 @@ function App({}: AppProps) {
 
   const handleDeviceId = async (value: string) => {
     setDeviceId(value)
-    setStream(await getStream({ audio: { deviceId: value }}))
+    setStream(await getStream({ audio: { deviceId: value } }))
   }
 
   return (
     <div className="App">
       <AppBar position="static">
         <Toolbar>
-          <Typography variant="h6">
-            診断ツール
-          </Typography>
+          <Typography variant="h6">診断ツール</Typography>
         </Toolbar>
       </AppBar>
       <Browser />
       <Sound />
-      <Audio deviceId={deviceId} onChangeDeviceId={handleDeviceId} stream={stream} showStream={!startRoom} />
+      <Audio
+        deviceId={deviceId}
+        onChangeDeviceId={handleDeviceId}
+        stream={stream}
+        showStream={!startRoom}
+      />
       <Sfu stream={stream} onJoinRoom={setStartRoom} />
     </div>
   )

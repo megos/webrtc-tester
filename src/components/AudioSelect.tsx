@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from 'react'
-import { Button, Select, MenuItem, SelectProps, Typography } from '@material-ui/core'
+import {
+  Button,
+  Select,
+  MenuItem,
+  SelectProps,
+  Typography,
+} from '@material-ui/core'
 
 type AudioSelectProps = Omit<SelectProps, 'onChange'> & {
   onChange: (value: string) => void
@@ -10,7 +16,7 @@ export const AudioSelect: React.FC<AudioSelectProps> = ({
   disabled,
   ...props
 }) => {
-  const [options, setOption] = useState<{ label: string; value: string; }[]>([])
+  const [options, setOption] = useState<{ label: string; value: string }[]>([])
 
   const getDevices = async () => {
     try {
@@ -45,7 +51,9 @@ export const AudioSelect: React.FC<AudioSelectProps> = ({
 
   return (
     <>
-      <Typography color="textSecondary">マイクが見つかりませんと表示される場合はマイクが繋がっているか、ブラウザでマイクの許可ができているか確認してください</Typography>
+      <Typography color="textSecondary">
+        マイクが見つかりませんと表示される場合はマイクが繋がっているか、ブラウザでマイクの許可ができているか確認してください
+      </Typography>
       <Select
         label={unavailable ? 'マイクが見つかりません' : 'マイクを選択する'}
         onChange={(e) => onChange(e.target.value as string)}
@@ -56,7 +64,9 @@ export const AudioSelect: React.FC<AudioSelectProps> = ({
         {options
           .filter((o) => o.label !== '' || o.value !== '')
           .map((o) => (
-            <MenuItem key={o.value} value={o.value}>{o.label}</MenuItem>
+            <MenuItem key={o.value} value={o.value}>
+              {o.label}
+            </MenuItem>
           ))}
       </Select>
       <Button onClick={getDevices} color="primary">

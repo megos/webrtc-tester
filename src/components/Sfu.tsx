@@ -18,7 +18,10 @@ interface PeerError extends Error {
     | 'unavailable-id'
 }
 
-export const Sfu: React.FC<{ stream: MediaStream | null; onJoinRoom: (value: boolean) => void }> = ({ stream, onJoinRoom }) => {
+export const Sfu: React.FC<{
+  stream: MediaStream | null
+  onJoinRoom: (value: boolean) => void
+}> = ({ stream, onJoinRoom }) => {
   const peerRef = useRef<Peer | null>(null)
   const peer2Ref = useRef<Peer | null>(null)
   const [remoteStream, setRemoteStream] = useState<MediaStream | null>(null)

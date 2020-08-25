@@ -1,20 +1,22 @@
 import React, { useRef, useEffect, AudioHTMLAttributes } from 'react'
 
-export const AudioStream: React.FC<AudioHTMLAttributes<HTMLAudioElement> & { stream?: MediaStream | null }> = ({
-  stream,
-  ...props
-}) => {
+export const AudioStream: React.FC<
+  AudioHTMLAttributes<HTMLAudioElement> & { stream?: MediaStream | null }
+> = ({ stream, ...props }) => {
   const audioRef = useRef<HTMLAudioElement | null>(null)
 
   const destory = () => {
-    ;(audioRef.current?.srcObject as MediaStream | null)?.getTracks().forEach(track => track.stop())
+    ;(audioRef.current?.srcObject as MediaStream | null)
+      ?.getTracks()
+      .forEach((track) => track.stop())
     if (audioRef.current) audioRef.current.srcObject = null
   }
 
   useEffect(() => {
     if (audioRef.current) {
       if (stream) {
-        if (audioRef.current.srcObject !== stream) audioRef.current.srcObject = stream
+        if (audioRef.current.srcObject !== stream)
+          audioRef.current.srcObject = stream
       } else {
         destory()
       }
@@ -23,7 +25,5 @@ export const AudioStream: React.FC<AudioHTMLAttributes<HTMLAudioElement> & { str
 
   useEffect(() => destory, [])
 
-  return (
-      <audio ref={audioRef} {...props} controls />
-  )
+  return <audio ref={audioRef} {...props} controls />
 }
