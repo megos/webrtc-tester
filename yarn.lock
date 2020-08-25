@@ -2039,6 +2039,13 @@ braces@^3.0.1, braces@~3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
+browser-detect@^0.2.28:
+  version "0.2.28"
+  resolved "https://registry.yarnpkg.com/browser-detect/-/browser-detect-0.2.28.tgz#5688fc22f638390614ebea4646483403fb20ebfb"
+  integrity sha512-KeWGHqYQmHDkCFG2dIiX/2wFUgqevbw/rd6wNi9N6rZbaSJFtG5kel0HtprRwCGp8sqpQP79LzDJXf/WCx4WAw==
+  dependencies:
+    core-js "^2.5.7"
+
 browser-process-hrtime@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/browser-process-hrtime/-/browser-process-hrtime-1.0.0.tgz#3c9b4b7d782c8121e56f10106d84c0d0ffc94626"
@@ -2366,6 +2373,11 @@ core-js-pure@^3.0.0:
   version "3.6.5"
   resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.6.5.tgz#c79e75f5e38dbc85a662d91eea52b8256d53b813"
   integrity sha512-lacdXOimsiD0QyNf9BC/mxivNJ/ybBGJXQFKzRekp1WTHoVUWsUHEn+2T8GJAzzIhyOuXA+gOxCVN3l+5PLPUA==
+
+core-js@^2.5.7:
+  version "2.6.11"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
+  integrity sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==
 
 core-js@^3.5.0:
   version "3.6.5"
