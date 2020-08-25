@@ -3,6 +3,7 @@ import 'webrtc-adapter'
 import Peer, { SfuRoom } from 'skyway-js'
 import { Typography, Card, CardContent, Button } from '@material-ui/core'
 import { AudioStream } from './AudioStream'
+import { Section } from './Section'
 
 interface PeerError extends Error {
   type:
@@ -33,7 +34,8 @@ export const Sfu: React.FC<{ stream: MediaStream | null }> = ({ stream }) => {
     }
 
     peerRef.current = new Peer({
-      key: import.meta.env.SNOWPACK_PUBLIC_SKYWAY_KEY ?? 'PLEASE SET SKYWAY_KEY',
+      key:
+        import.meta.env.SNOWPACK_PUBLIC_SKYWAY_KEY ?? 'PLEASE SET SKYWAY_KEY',
       debug: 3,
     })
     peerRef.current.on('error', onError)
@@ -50,7 +52,9 @@ export const Sfu: React.FC<{ stream: MediaStream | null }> = ({ stream }) => {
       })
       room.on('open', () => {
         peer2Ref.current = peerRef.current = new Peer(peerId + '_echo', {
-          key: import.meta.env.SNOWPACK_PUBLIC_SKYWAY_KEY ?? 'PLEASE SET SKYWAY_KEY',
+          key:
+            import.meta.env.SNOWPACK_PUBLIC_SKYWAY_KEY ??
+            'PLEASE SET SKYWAY_KEY',
           debug: 3,
         })
         peer2Ref.current.on('error', onError)
@@ -74,20 +78,15 @@ export const Sfu: React.FC<{ stream: MediaStream | null }> = ({ stream }) => {
   }, [])
 
   return (
-    <>
-      <Typography>Step.4 SFU Room</Typography>
-      <Card>
-        <CardContent>
-          <Button onClick={handleClick} disabled={!stream}>
-            接続
-          </Button>
-          <Button onClick={destroy}>
-            切断
-          </Button>
-          <Typography color="textSecondary">接続後、自分の声がやまびことして聞こえますか？聞こえる場合は繋がっています</Typography>
-          {<AudioStream stream={remoteStream} autoPlay />}
-        </CardContent>
-      </Card>
-    </>
+    <Section title="Step.4 SFU Room">
+      <Button onClick={handleClick} disabled={!stream}>
+        接続
+      </Button>
+      <Button onClick={destroy}>切断</Button>
+      <Typography color="textSecondary">
+        接続後、自分の声がやまびことして聞こえますか？聞こえる場合は繋がっています
+      </Typography>
+      {<AudioStream stream={remoteStream} autoPlay />}
+    </Section>
   )
 }
