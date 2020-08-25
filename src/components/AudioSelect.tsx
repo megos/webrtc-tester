@@ -60,7 +60,7 @@ export const AudioSelect: React.FC<AudioSelectProps> = ({
           ))}
       </Select>
       <Button onClick={getDevices} color="primary">
-        再読み込みする
+        マイクを探す
       </Button>
     </>
   )
