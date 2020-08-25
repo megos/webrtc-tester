@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Typography } from '@material-ui/core'
 import { AudioSelect } from './AudioSelect'
 import { AudioStream } from './AudioStream'
@@ -16,7 +16,7 @@ export const Audio: React.FC<{
       <Typography color="textSecondary">
         再生ボタンを押して、自分の声が聞こえるか確認してください
       </Typography>
-      {showStream && <AudioStream stream={stream} />}
+      {showStream && <AudioStream stream={stream} disableDestroy />}
     </Section>
   )
 }
