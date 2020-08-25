@@ -1,11 +1,12 @@
 import React, { useRef, useEffect, AudioHTMLAttributes } from 'react'
 
 export const AudioStream: React.FC<
-  AudioHTMLAttributes<HTMLAudioElement> & { stream?: MediaStream | null }
-> = ({ stream, ...props }) => {
+  AudioHTMLAttributes<HTMLAudioElement> & { stream?: MediaStream | null; disableDestroy?: boolean; }
+> = ({ stream, disableDestroy, ...props }) => {
   const audioRef = useRef<HTMLAudioElement | null>(null)
 
   const destory = () => {
+    if (disableDestroy) return
     ;(audioRef.current?.srcObject as MediaStream | null)
       ?.getTracks()
       .forEach((track) => track.stop())
