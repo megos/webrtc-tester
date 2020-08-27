@@ -22,7 +22,7 @@
     "@types/react-dom": "16.9.8",
     "@types/snowpack-env": "2.3.0",
     "jest": "26.4.2",
-    "prettier": "2.0.5",
+    "prettier": "2.1.1",
     "snowpack": "2.9.0",
     "typescript": "3.9.7"
   }
