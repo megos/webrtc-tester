@@ -23,7 +23,7 @@
     "@types/snowpack-env": "2.3.0",
     "jest": "26.4.2",
     "prettier": "2.1.1",
-    "snowpack": "2.9.0",
+    "snowpack": "2.9.3",
     "typescript": "3.9.7"
   }
 }
