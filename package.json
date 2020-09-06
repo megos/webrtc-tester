@@ -15,6 +15,7 @@
     "webrtc-adapter": "7.7.0"
   },
   "devDependencies": {
+    "@percy/cypress": "^2.3.1",
     "@snowpack/app-scripts-react": "1.10.0",
     "@testing-library/jest-dom": "5.11.4",
     "@testing-library/react": "10.4.9",
