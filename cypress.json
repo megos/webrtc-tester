@@ -3,5 +3,6 @@
   "integrationFolder": "e2e/integration",
   "supportFile": "e2e/support/index.js",
   "pluginsFile": "e2e/plugins/index.js",
-  "fixturesFolder": false
+  "fixturesFolder": false,
+  "projectId": "2tb9ip"
 }
