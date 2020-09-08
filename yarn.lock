@@ -7149,10 +7149,10 @@ snapdragon@^0.8.1:
     source-map-resolve "^0.5.0"
     use "^3.1.0"
 
-snowpack@2.10.1:
-  version "2.10.1"
-  resolved "https://registry.yarnpkg.com/snowpack/-/snowpack-2.10.1.tgz#a20360392ed8022cda7e7f8d0842040a62cd2448"
-  integrity sha512-x7/iI8K8bjFjkeQqnlVIP+huT3d8eHshr9st2cPNHDn1OCzdgWO6PCixq22uPH2UMFBdpEMy3Jq2+HusiwncUA==
+snowpack@2.10.2:
+  version "2.10.2"
+  resolved "https://registry.yarnpkg.com/snowpack/-/snowpack-2.10.2.tgz#6f8ff12e6cd188c1cc48d95a6751ed842613479b"
+  integrity sha512-tuWgujXk7lQMlt5Bq6HQC6CawwqVQ/HiPzWPOEtZjSw+J7XCG2mp9+0yy8Imc7H4wkkas6EqaeOYQMPm9zaXlg==
   dependencies:
     "@babel/plugin-syntax-import-meta" "^7.10.4"
     "@rollup/plugin-alias" "^3.0.1"
