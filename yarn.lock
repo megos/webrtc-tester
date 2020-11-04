@@ -1735,18 +1735,18 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@snowpack/app-scripts-react@1.12.5":
-  version "1.12.5"
-  resolved "https://registry.yarnpkg.com/@snowpack/app-scripts-react/-/app-scripts-react-1.12.5.tgz#1143f4d6cd2c80f7e8c5224cbeda4d0189a1cace"
-  integrity sha512-3xSxF3k2Tf60z3Suf6hsjDPT22KnF/NgBXCD3HskXE4aajPDEuxmi0GuIxDt68WFi0C5s76GpwFdQ6YxNS/ECQ==
+"@snowpack/app-scripts-react@1.12.6":
+  version "1.12.6"
+  resolved "https://registry.yarnpkg.com/@snowpack/app-scripts-react/-/app-scripts-react-1.12.6.tgz#703a0c2d457925dc5a6ccc319adf54baf392b06d"
+  integrity sha512-/Ew3fEYp1lCrRWg+e1ZBTLSi573oOPAG6bHC0Zw7nLFmVeHn+OVrAiyhl5jpboAeJlgE2g1rIAmse+CNlvBPSA==
   dependencies:
     "@babel/core" "^7.10.5"
     "@babel/preset-react" "^7.10.4"
     "@babel/preset-typescript" "^7.10.4"
     "@snowpack/plugin-babel" "^2.1.4"
     "@snowpack/plugin-dotenv" "^2.0.4"
-    "@snowpack/plugin-react-refresh" "^2.3.4"
-    "@snowpack/plugin-typescript" "^1.0.2"
+    "@snowpack/plugin-react-refresh" "^2.3.5"
+    "@snowpack/plugin-typescript" "^1.1.0"
     babel-jest "^26.2.2"
     babel-preset-react-app "^9.1.2"
     react-app-polyfill "^1.0.6"
@@ -1775,10 +1775,10 @@
     dotenv "^8.2.0"
     dotenv-expand "^5.1.0"
 
-"@snowpack/plugin-react-refresh@^2.3.4":
-  version "2.3.4"
-  resolved "https://registry.yarnpkg.com/@snowpack/plugin-react-refresh/-/plugin-react-refresh-2.3.4.tgz#629192b6460904914d0cc2a0a5d8de17cbef47c3"
-  integrity sha512-4mkY+HFiQ80Z3XYig2F/H6usFG9YF4xsJANBJOky3POQp92gcIGvirhDlQjvXbjTZHcDPRcpkH6S8V0+g9/mrQ==
+"@snowpack/plugin-react-refresh@^2.3.5":
+  version "2.3.5"
+  resolved "https://registry.yarnpkg.com/@snowpack/plugin-react-refresh/-/plugin-react-refresh-2.3.5.tgz#fdf0141c993a392d975eef9003b771e1ce806b63"
+  integrity sha512-1cglFeENhcROLs+safQqPgVbz3Vj7Kwxqae2G0wLuUkpXM1id/fuRdXXHAAGq7aDzkBmlAhR1Wm0GnU5LceMdw==
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/plugin-syntax-class-properties" "^7.10.0"
@@ -1792,10 +1792,10 @@
     execa "^4.0.3"
     npm-run-path "^4.0.1"
 
-"@snowpack/plugin-typescript@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@snowpack/plugin-typescript/-/plugin-typescript-1.0.2.tgz#2c229c40ee5d7b520d754ba062b7530cc7fd3932"
-  integrity sha512-qVmsecGwzx5bCI0RDDIri0jtxtTwCY3eA0Q7sQBJKpVhaZ75FPIR0JTRLcDkoQc2V6OO7qTbDoNdyGFQvv0AEg==
+"@snowpack/plugin-typescript@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@snowpack/plugin-typescript/-/plugin-typescript-1.1.0.tgz#902d3f5500e7295835cefa31c0a26cafd2d819d0"
+  integrity sha512-6jAFFks42lW1Gy07qVF6A0RKOCQc+ICa029GUrbgLmXhs0UzDmTG+jJ0qyC41J9MnRR/utLrXvgWWVrmIrPifw==
   dependencies:
     execa "^4.0.3"
     npm-run-path "^4.0.1"
