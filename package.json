@@ -11,7 +11,7 @@
     "browser-detect": "0.2.28",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "skyway-js": "3.1.0",
+    "skyway-js": "4.0.0",
     "webrtc-adapter": "7.7.0"
   },
   "devDependencies": {
