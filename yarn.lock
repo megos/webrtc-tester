@@ -1410,6 +1410,13 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
+"@jitsi/sdp-interop@^0.1.13":
+  version "0.1.14"
+  resolved "https://registry.yarnpkg.com/@jitsi/sdp-interop/-/sdp-interop-0.1.14.tgz#a138448bf5e0868842ac0be7a8cd224511512674"
+  integrity sha512-v60VAtBx9LO46c9In9oMNY+Ho5993UMOLHBg6VcrcyoVTIWIeqs/9YjjmrQ3Sf4I5aMRABNl7HTby/1lHcqFJw==
+  dependencies:
+    sdp-transform "2.3.0"
+
 "@material-ui/core@4.11.0":
   version "4.11.0"
   resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-4.11.0.tgz#b69b26e4553c9e53f2bfaf1053e216a0af9be15a"
@@ -7145,13 +7152,6 @@ scheduler@^0.20.1:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
 
-sdp-interop@^0.1.13:
-  version "0.1.13"
-  resolved "https://registry.yarnpkg.com/sdp-interop/-/sdp-interop-0.1.13.tgz#353bb77d2162a33e786b77284199e132e28eb6d4"
-  integrity sha512-jxOtdFY2CCQoAnWFMfsp0W19oKkFIToybgHQhGp/0CsyE72Yv0vIx/+mQldp6QV++ffcGXZfOtIgleH4kzfRhQ==
-  dependencies:
-    sdp-transform "2.3.0"
-
 sdp-transform@2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/sdp-transform/-/sdp-transform-2.3.0.tgz#57a9575942041d8577a869d7c74d4c3a0bd888f6"
@@ -7282,11 +7282,12 @@ sisteransi@^1.0.4:
   resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-1.0.5.tgz#134d681297756437cc05ca01370d3a7a571075ed"
   integrity sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==
 
-skyway-js@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/skyway-js/-/skyway-js-3.1.0.tgz#227fc8678a6aca08ac3bbd123bccf60f55c9496d"
-  integrity sha512-f2iG1fYHXjiC78ShC6dGmCmSXzOhZu0Acoaa19AsA6F4SgEou/miHFzHnw9d9pwSoBGz69bxQU3dgsaFmJ/9Gg==
+skyway-js@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/skyway-js/-/skyway-js-4.0.0.tgz#6f0c63412bd3db72ee8f25d6bec501bff2d5fedf"
+  integrity sha512-R66VUziqkWbIBGCGnHhckCn25I8Q4C5Zt7e3Ksirptt7ZnpvZAKXYQ5CPvkH/Lg+JeAtiH/474k0iRTULGqASg==
   dependencies:
+    "@jitsi/sdp-interop" "^0.1.13"
     "@types/node" "^12.6.8"
     detect-browser "^4.6.0"
     enum "git+https://github.com/eastandwest/enum.git#react-native"
@@ -7294,7 +7295,6 @@ skyway-js@3.1.0:
     js-binarypack "0.0.9"
     object-sizeof "^1.4.0"
     query-string "^6.8.2"
-    sdp-interop "^0.1.13"
     sdp-transform "^2.11.0"
     socket.io-client "^2.2.0"
     socket.io-parser "~3.3.0"
