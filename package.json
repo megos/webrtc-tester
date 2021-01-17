@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@percy/cypress": "2.3.3",
-    "@snowpack/app-scripts-react": "1.12.6",
+    "@snowpack/app-scripts-react": "2.0.0",
     "@snowpack/plugin-dotenv": "2.0.5",
     "@snowpack/plugin-react-refresh": "2.4.0",
     "@snowpack/plugin-typescript": "1.2.1",
