@@ -1,6 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react'
 import 'webrtc-adapter'
-import Peer, { SfuRoom } from 'skyway-js'
+// @ts-ignore
+import SkyWay from 'skyway-js/dist/skyway'
+import type { SfuRoom } from 'skyway-js'
+import type Peer from 'skyway-js'
 import { Typography, Card, CardContent, Button } from '@material-ui/core'
 import { AudioStream } from './AudioStream'
 import { Section } from './Section'
@@ -38,13 +41,13 @@ export const Sfu: React.FC<{
     }
 
     onJoinRoom(true)
-    peerRef.current = new Peer({
+    peerRef.current = new SkyWay({
       key:
         import.meta.env.SNOWPACK_PUBLIC_SKYWAY_KEY ?? 'PLEASE SET SKYWAY_KEY',
       debug: 3,
     })
-    peerRef.current.on('error', onError)
-    peerRef.current.once('open', (peerId) => {
+    peerRef.current?.on('error', onError)
+    peerRef.current?.once('open', (peerId: string) => {
       const room = peerRef.current?.joinRoom(peerId, {
         mode: 'sfu',
         stream,
@@ -56,14 +59,14 @@ export const Sfu: React.FC<{
         setRemoteStream(null)
       })
       room.on('open', () => {
-        peer2Ref.current = peerRef.current = new Peer(peerId + '_echo', {
+        peer2Ref.current = peerRef.current = new SkyWay(peerId + '_echo', {
           key:
             import.meta.env.SNOWPACK_PUBLIC_SKYWAY_KEY ??
             'PLEASE SET SKYWAY_KEY',
           debug: 3,
         })
-        peer2Ref.current.on('error', onError)
-        peer2Ref.current.once('open', () => {
+        peer2Ref.current?.on('error', onError)
+        peer2Ref.current?.once('open', () => {
           peerRef.current?.joinRoom(peerId, {
             mode: 'sfu',
             stream,
