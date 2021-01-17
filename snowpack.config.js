@@ -26,7 +26,4 @@ module.exports = {
   buildOptions: {
     /* ... */
   },
-  alias: {
-    'skyway-js': 'skyway-js/dist/skyway.js',
-  },
 }
