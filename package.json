@@ -28,7 +28,7 @@
     "@types/react": "17.0.3",
     "@types/react-dom": "17.0.2",
     "@types/snowpack-env": "2.3.3",
-    "@web/test-runner": "0.12.15",
+    "@web/test-runner": "0.12.16",
     "chai": "4.3.3",
     "cypress": "6.6.0",
     "jest": "26.6.3",
