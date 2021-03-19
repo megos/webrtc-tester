@@ -1705,10 +1705,10 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@snowpack/app-scripts-react@2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@snowpack/app-scripts-react/-/app-scripts-react-2.0.0.tgz#4e01e9090686ecf4af76b664aab449a7019b6467"
-  integrity sha512-+bAZ/52/3PYIlzQmvFdPwhmYaO2iPMajMX9FH8Zeld5njnPsiHjWVoXIR872fkVpLSODolz8r2k8++xo9YDONA==
+"@snowpack/app-scripts-react@2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@snowpack/app-scripts-react/-/app-scripts-react-2.0.1.tgz#276eeac734123be5f81cf037b2826fe2ee07d2dd"
+  integrity sha512-zS6HQ5ujotJ5kJrQfDQz4o9c9z8sgKv9ysoCYqxnnSCeB8OOrgWYMt21GoTjHjPTiyZpS7ZBMT9qk6C2m7iiUA==
   dependencies:
     "@babel/core" "^7.10.5"
     "@babel/preset-react" "^7.10.4"
