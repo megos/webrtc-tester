@@ -8506,10 +8506,10 @@ snapdragon@^0.8.1:
     source-map-resolve "^0.5.0"
     use "^3.1.0"
 
-snowpack@3.3.1:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/snowpack/-/snowpack-3.3.1.tgz#f8a700e604719be0982dcf6cc2a10fa642ebcb10"
-  integrity sha512-93utJcqKkvQ9StnliIKqDp02laf+7MnPVULacuvNEVg8nHdmON0jKVuG5ezGAMtFRUGBfeQ+kO417tifG1lQUw==
+snowpack@3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/snowpack/-/snowpack-3.3.2.tgz#4d83242a40a0789f08f68dec229f297d536aadcf"
+  integrity sha512-ZMTnEFuxRgOzIsbMKHVv5ssP1Bi1fTsLrjpDBkyXj0LH9+q6igynhAJqrvoOhyoH8IW4k3yN/WqE8qzXbMFTEQ==
   dependencies:
     cli-spinners "^2.5.0"
     default-browser-id "^2.0.0"
