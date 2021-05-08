@@ -12,7 +12,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "skyway-js": "4.4.1",
-    "webrtc-adapter": "7.7.1"
+    "webrtc-adapter": "8.0.0"
   },
   "devDependencies": {
     "@percy/cypress": "2.3.4",
