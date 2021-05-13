@@ -2,7 +2,8 @@ describe('Top', () => {
   it('Show top page', () => {
     cy.visit('/')
 
-    cy.percySnapshot('top page')
+    // Ignore browser version
+    cy.percySnapshot('top page', { percyCSS: '.MuiTypography-colorTextSecondary:nth-child(2) { visibility: hidden; }' })
 
     cy.contains('診断ツール')
     cy.contains('ブラウザ')
