@@ -2695,10 +2695,10 @@
     chrome-launcher "^0.13.4"
     puppeteer-core "^8.0.0"
 
-"@web/test-runner-commands@^0.5.2":
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/@web/test-runner-commands/-/test-runner-commands-0.5.2.tgz#563b451427440fece15266eadf0d39708a0235db"
-  integrity sha512-axgYk5lpCTz6COaKs0gFI3u1MpwKv7sk/lFEoBnsbEKm++qEVTgBOKqnubNTPY7GNqga9CFDeRqFDSjeurVCIA==
+"@web/test-runner-commands@^0.5.3":
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/@web/test-runner-commands/-/test-runner-commands-0.5.3.tgz#9d4826618b14391597f2c67d3e264bb7b6a70d29"
+  integrity sha512-V0xt2uJWhRRpJoxLGpJdWwYcsxTwWKDw4yOXtUgBJ0WHaClLUavopoCX65KTHe+9RmgN9SzLK0z7AsynemJO6A==
   dependencies:
     "@web/test-runner-core" "^0.10.14"
     mkdirp "^1.0.4"
@@ -2809,26 +2809,26 @@
     picomatch "^2.2.2"
     v8-to-istanbul "^7.1.0"
 
-"@web/test-runner-mocha@^0.7.2":
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/@web/test-runner-mocha/-/test-runner-mocha-0.7.2.tgz#6e3726234179c7e13e6f140ff962ddd9a7086bfb"
-  integrity sha512-UsaLvJ0k5Kb53WegF0J0pmKxCLdo6Nxl7GHYykO7m99Irz+jIGXV7VJP9/b8t+HH3fHyqB2Nmd5q9oxXwIJyNw==
+"@web/test-runner-mocha@^0.7.3":
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/@web/test-runner-mocha/-/test-runner-mocha-0.7.3.tgz#7e23042241f480256c1f6a2890095a16eb3554ec"
+  integrity sha512-EbJydgh9Peo74SR0WjAEXs9X64ec41RaSXp4yXCup7jzvzH/5mQd2kZ/ga9F8Jh3zcKknR+s59JLVivgc5Ni7A==
   dependencies:
     "@types/mocha" "^8.2.0"
     "@web/test-runner-core" "^0.10.8"
 
-"@web/test-runner@0.13.8":
-  version "0.13.8"
-  resolved "https://registry.yarnpkg.com/@web/test-runner/-/test-runner-0.13.8.tgz#c019f9be812bd631bf3b327cd5f947dec8d5f599"
-  integrity sha512-6l+5hQx+gdQaRqxs/PJxOZ3MtCQw/SdhoAtpsntgQhtfyBOdah4W1sDteJ4+i3T4URG6CPEboPMYS3NC+y4hpw==
+"@web/test-runner@0.13.10":
+  version "0.13.10"
+  resolved "https://registry.yarnpkg.com/@web/test-runner/-/test-runner-0.13.10.tgz#955e2a0fabdbeb699b2a2200c9a645ba727d633e"
+  integrity sha512-TeW2yHi7tTre7nkk9MDTvMVu4fAFpRR+OEMaVwOXawgfKU1GPXpQ8WvAem6KiKcJu2ciNwvnOBCTNtrnPr557Q==
   dependencies:
     "@web/browser-logs" "^0.2.2"
     "@web/config-loader" "^0.1.3"
     "@web/dev-server" "^0.1.17"
     "@web/test-runner-chrome" "^0.10.0"
-    "@web/test-runner-commands" "^0.5.2"
+    "@web/test-runner-commands" "^0.5.3"
     "@web/test-runner-core" "^0.10.17"
-    "@web/test-runner-mocha" "^0.7.2"
+    "@web/test-runner-mocha" "^0.7.3"
     camelcase "^6.2.0"
     chalk "^4.1.0"
     command-line-args "^5.1.1"
