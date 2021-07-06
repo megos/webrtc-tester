@@ -2463,10 +2463,10 @@
   resolved "https://registry.yarnpkg.com/@types/sizzle/-/sizzle-2.3.2.tgz#a811b8c18e2babab7d542b3365887ae2e4d9de47"
   integrity sha512-7EJYyKTL7tFR8+gDbB6Wwz/arpGa0Mywk1TJbNzKzHtzbwVmY4HR9WqS5VV7dsBUKQmPNr192jHr/VpBluj/hg==
 
-"@types/snowpack-env@2.3.3":
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/@types/snowpack-env/-/snowpack-env-2.3.3.tgz#d2dfb1fb8557aa8bb517606d5dfa249cc861c3ff"
-  integrity sha512-riJuu2fR3qhBfpWJtqQtNwYJFvquiXfqdprXvZjSNmscnZbIVyHoM49ZVEM1bciKM1mWOCdjXymOYHyGh2WLtg==
+"@types/snowpack-env@2.3.4":
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@types/snowpack-env/-/snowpack-env-2.3.4.tgz#79073fd98a47a5f1ba83326b75cb433dc31a7c36"
+  integrity sha512-zYzMb2aMyzXW5VgOQHy+FgI8N5tLFb+tIsUqk35CIgSr9pT4pji2GR8BCOTMdniusVuRHIp/DaYQNQGYGLVZHQ==
 
 "@types/stack-utils@^2.0.0":
   version "2.0.0"
