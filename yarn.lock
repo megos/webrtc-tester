@@ -3969,7 +3969,7 @@ ci-info@^3.1.1:
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-3.1.1.tgz#9a32fcefdf7bcdb6f0a7e1c0f8098ec57897b80a"
   integrity sha512-kdRWLBIJwdsYJWYJFtAFFYxybguqeF91qpZaggjG5Nf8QKdizFG2hjqvaTXbxFIcYbSaD74KpAXv6BSm17DHEQ==
 
-cjs-module-lexer@^1.0.0:
+cjs-module-lexer@^1.0.0, cjs-module-lexer@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/cjs-module-lexer/-/cjs-module-lexer-1.2.1.tgz#2fd46d9906a126965aa541345c499aaa18e8cd73"
   integrity sha512-jVamGdJPDeuQilKhvVn1h3knuMOZzr8QDnpk+M9aMlCaMkTDd6fBWPhiDqFvFZ07pL0liqabAiuy8SY4jGHeaw==
@@ -4891,6 +4891,11 @@ es-module-lexer@^0.4.0:
   resolved "https://registry.yarnpkg.com/es-module-lexer/-/es-module-lexer-0.4.1.tgz#dda8c6a14d8f340a24e34331e0fab0cb50438e0e"
   integrity sha512-ooYciCUtfw6/d2w56UVeqHPcoCFAiJdz5XOkYpv/Txl1HMUozpXjz/2RIQgqwKdXNDPSF1W7mJCFse3G+HDyAA==
 
+es-module-lexer@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/es-module-lexer/-/es-module-lexer-0.6.0.tgz#e72ab05b7412e62b9be37c37a09bdb6000d706f0"
+  integrity sha512-f8kcHX1ArhllUtb/wVSyvygoKCznIjnxhLxy7TCvIiMdT7fL4ZDTIKaadMe6eLvOXg6Wk02UeoFgUoZ2EKZZUA==
+
 esbuild@~0.9.0:
   version "0.9.7"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.9.7.tgz#ea0d639cbe4b88ec25fbed4d6ff00c8d788ef70b"
@@ -4961,6 +4966,32 @@ esinstall@^1.0.0:
     rollup "~2.37.1"
     rollup-plugin-polyfill-node "^0.6.2"
     slash "^3.0.0"
+    validate-npm-package-name "^3.0.0"
+    vm2 "^3.9.2"
+
+esinstall@^1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/esinstall/-/esinstall-1.1.7.tgz#ceabeb4b8685bf48c805a503e292dfafe4e0cb22"
+  integrity sha512-irDsrIF7fZ5BCQEAV5gmH+4nsK6JhnkI9C9VloXdmzJLbM1EcshPw8Ap95UUGc4ZJdzGeOrjV+jgKjQ/Z7Q3pg==
+  dependencies:
+    "@rollup/plugin-commonjs" "^16.0.0"
+    "@rollup/plugin-inject" "^4.0.2"
+    "@rollup/plugin-json" "^4.0.0"
+    "@rollup/plugin-node-resolve" "^10.0.0"
+    "@rollup/plugin-replace" "^2.4.2"
+    builtin-modules "^3.2.0"
+    cjs-module-lexer "^1.2.1"
+    es-module-lexer "^0.6.0"
+    execa "^5.1.1"
+    is-valid-identifier "^2.0.2"
+    kleur "^4.1.1"
+    mkdirp "^1.0.3"
+    picomatch "^2.3.0"
+    resolve "^1.20.0"
+    rimraf "^3.0.0"
+    rollup "~2.37.1"
+    rollup-plugin-polyfill-node "^0.6.2"
+    slash "~3.0.0"
     validate-npm-package-name "^3.0.0"
     vm2 "^3.9.2"
 
@@ -9070,7 +9101,7 @@ skyway-js@4.4.1:
     socket.io-client "^2.2.0"
     socket.io-parser "~3.3.0"
 
-slash@^3.0.0:
+slash@^3.0.0, slash@~3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
@@ -9128,10 +9159,10 @@ snapdragon@^0.8.1:
     source-map-resolve "^0.5.0"
     use "^3.1.0"
 
-snowpack@3.8.0:
-  version "3.8.0"
-  resolved "https://registry.yarnpkg.com/snowpack/-/snowpack-3.8.0.tgz#3819f547a6a116ccb4aa93c8ee065d5f1f7bad47"
-  integrity sha512-wtmrbeWlIdxXGy4Mlfabzmi7OdEoZNLnQSb+iz3veq1zifvHOocTg4M9Ix1O8r8BEhWkRrVhVu8N2edpVYfWWQ==
+snowpack@3.8.1:
+  version "3.8.1"
+  resolved "https://registry.yarnpkg.com/snowpack/-/snowpack-3.8.1.tgz#374b066dfae4bbf4ba701aecf47ce7c02893a334"
+  integrity sha512-p2ohs1RzFM0e7X98tEzmD2KaQ2chpQMmk4ITWWl7nGZm5MQ7U1M8b+QseR6Md+GwrUrcuDFeTjy/GiqsvnzuFA==
   dependencies:
     "@npmcli/arborist" "^2.6.4"
     bufferutil "^4.0.2"
@@ -9146,7 +9177,7 @@ snowpack@3.8.0:
     detect-port "^1.3.0"
     es-module-lexer "^0.3.24"
     esbuild "~0.9.0"
-    esinstall "^1.0.0"
+    esinstall "^1.1.7"
     estree-walker "^2.0.2"
     etag "^1.8.1"
     execa "^5.1.1"
@@ -9176,6 +9207,7 @@ snowpack@3.8.0:
     rollup "~2.37.1"
     signal-exit "^3.0.3"
     skypack "^0.3.0"
+    slash "~3.0.0"
     source-map "^0.7.3"
     strip-ansi "^6.0.0"
     strip-comments "^2.0.1"
