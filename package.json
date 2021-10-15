@@ -29,7 +29,7 @@
     "@types/react": "17.0.30",
     "@types/react-dom": "17.0.9",
     "@types/snowpack-env": "2.3.4",
-    "@web/test-runner": "0.13.19",
+    "@web/test-runner": "0.13.20",
     "chai": "4.3.4",
     "cypress": "8.6.0",
     "jest": "27.2.5",
