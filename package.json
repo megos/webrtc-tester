@@ -31,7 +31,7 @@
     "@types/snowpack-env": "2.3.4",
     "@web/test-runner": "0.13.20",
     "chai": "4.3.4",
-    "cypress": "8.6.0",
+    "cypress": "8.7.0",
     "jest": "27.3.1",
     "prettier": "2.4.1",
     "snowpack": "3.8.8",
