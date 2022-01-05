@@ -12,7 +12,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "skyway-js": "4.4.3",
-    "webrtc-adapter": "8.1.0"
+    "webrtc-adapter": "8.1.1"
   },
   "devDependencies": {
     "@percy/cli": "1.0.0-beta.71",
