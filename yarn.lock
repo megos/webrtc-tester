@@ -9114,10 +9114,10 @@ skypack@^0.3.2:
     rollup "^2.23.0"
     validate-npm-package-name "^3.0.0"
 
-skyway-js@4.4.4:
-  version "4.4.4"
-  resolved "https://registry.yarnpkg.com/skyway-js/-/skyway-js-4.4.4.tgz#ce36828969cf949a82f93fa91255554f3df40961"
-  integrity sha512-CiuT5jIwUxFhMR+wbAxBaH0G9WI8v5AztMuLON8wXqWeRCuFKRVvzWO3sX0mBuRKeguEx2SzSno5NncfA72qrQ==
+skyway-js@4.4.5:
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/skyway-js/-/skyway-js-4.4.5.tgz#94373d343a2d9dc762fdf102156e3f25f4af585d"
+  integrity sha512-H/XSAsQA66+KL13w3VxplutnZ543tQzjE3rzMyY7Bgq7N0ZIGhWTq/KFSsUZr5zCEHO9E3ew4rC1Lwy8Sc+v7g==
   dependencies:
     "@jitsi/sdp-interop" "^0.1.13"
     "@types/node" "^12.6.8"
