@@ -1,5 +1,5 @@
 import React from 'react'
-import { Typography } from '@material-ui/core'
+import { Typography } from '@mui/material'
 import { Section } from './Section'
 
 export const Sound: React.FC = () => {
