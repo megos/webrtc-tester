@@ -5,7 +5,10 @@ const StyledCard = styled(Card)(({ theme }) => ({
   margin: theme.spacing(3),
 }))
 
-export const Section: React.FC<{ title: string }> = ({ title, children }) => {
+export const Section: React.FC<React.PropsWithChildren<{ title: string }>> = ({
+  title,
+  children,
+}) => {
   return (
     <>
       <Typography variant="h6" margin={3}>
