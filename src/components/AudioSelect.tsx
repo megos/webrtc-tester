@@ -5,7 +5,7 @@ import {
   MenuItem,
   SelectProps,
   Typography,
-} from '@material-ui/core'
+} from '@mui/material'
 
 type AudioSelectProps = Omit<SelectProps, 'onChange'> & {
   onChange: (value: string) => void

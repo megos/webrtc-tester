@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { AppBar, Toolbar, Typography } from '@material-ui/core'
+import { AppBar, Toolbar, Typography } from '@mui/material'
 import { Browser } from './components/Browser'
 import { Audio } from './components/Audio'
 import { Sound } from './components/Sound'
