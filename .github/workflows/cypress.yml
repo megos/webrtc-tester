@@ -11,7 +11,7 @@ jobs:
       - name: Start server in the background
         run: npm run dev &
       - name: Cypress run
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v5
         with:
           browser: chrome
           record: true

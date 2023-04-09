@@ -1,8 +1,0 @@
-{
-  "baseUrl": "http://localhost:5173",
-  "integrationFolder": "e2e/integration",
-  "supportFile": "e2e/support/index.ts",
-  "pluginsFile": "e2e/plugins/index.ts",
-  "fixturesFolder": false,
-  "projectId": "2tb9ip"
-}
