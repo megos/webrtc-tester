@@ -1,8 +1,12 @@
 {
+  "name": "webrtc-tester",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "snowpack dev",
-    "build": "snowpack build",
-    "test": "jest",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\""
   },
@@ -17,24 +21,12 @@
   "devDependencies": {
     "@percy/cli": "1.22.0",
     "@percy/cypress": "3.1.2",
-    "@snowpack/app-scripts-react": "2.0.1",
-    "@snowpack/plugin-dotenv": "2.2.0",
-    "@snowpack/plugin-react-refresh": "2.5.0",
-    "@snowpack/plugin-typescript": "1.2.1",
-    "@snowpack/web-test-runner-plugin": "0.2.2",
-    "@testing-library/jest-dom": "5.16.5",
-    "@testing-library/react": "14.0.0",
-    "@types/chai": "4.3.4",
-    "@types/mocha": "10.0.1",
     "@types/react": "18.0.33",
     "@types/react-dom": "18.0.11",
-    "@types/snowpack-env": "2.3.4",
-    "@web/test-runner": "0.15.3",
-    "chai": "4.3.7",
+    "@vitejs/plugin-react": "3.1.0",
     "cypress": "9.7.0",
-    "jest": "29.5.0",
     "prettier": "2.8.7",
-    "snowpack": "3.8.8",
-    "typescript": "5.0.4"
+    "typescript": "5.0.4",
+    "vite": "4.2.0"
   }
 }
