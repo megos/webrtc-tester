@@ -4,7 +4,7 @@ import 'webrtc-adapter'
 import SkyWay from 'skyway-js/dist/skyway'
 import type { SfuRoom } from 'skyway-js'
 import type Peer from 'skyway-js'
-import { Typography, Card, CardContent, Button } from '@material-ui/core'
+import { Typography, Card, CardContent, Button } from '@mui/material'
 import { AudioStream } from './AudioStream'
 import { Section } from './Section'
 

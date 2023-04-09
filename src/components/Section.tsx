@@ -1,28 +1,22 @@
 import React from 'react'
-import {
-  Typography,
-  Card,
-  CardContent,
-  makeStyles,
-  Theme,
-} from '@material-ui/core'
+import { Typography, Card, CardContent, styled } from '@mui/material'
 
-export const useStyles = makeStyles((theme: Theme) => ({
-  root: {
-    margin: theme.spacing(3),
-  },
+const StyledCard = styled(Card)(({ theme }) => ({
+  margin: theme.spacing(3),
 }))
 
-export const Section: React.FC<{ title: string }> = ({ title, children }) => {
-  const classes = useStyles()
+export const Section: React.FC<React.PropsWithChildren<{ title: string }>> = ({
+  title,
+  children,
+}) => {
   return (
     <>
-      <Typography variant="h6" className={classes.root}>
+      <Typography variant="h6" margin={3}>
         {title}
       </Typography>
-      <Card className={classes.root}>
+      <StyledCard>
         <CardContent>{children}</CardContent>
-      </Card>
+      </StyledCard>
     </>
   )
 }

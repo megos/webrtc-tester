@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Typography } from '@material-ui/core'
+import { Typography } from '@mui/material'
 import { AudioSelect } from './AudioSelect'
 import { AudioStream } from './AudioStream'
 import { Section } from './Section'
