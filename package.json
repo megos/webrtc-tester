@@ -25,7 +25,7 @@
     "@percy/cypress": "3.1.2",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
-    "@vitejs/plugin-react": "4.0.2",
+    "@vitejs/plugin-react": "4.0.3",
     "cypress": "12.17.0",
     "prettier": "3.0.0",
     "typescript": "5.1.6",
